@@ -1,64 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
-<html>
+<html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ทำอะไรดี</title>          <!-- ชื่อมุมบนซ้าย -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume - ฉายา ตะก้อง</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
 
-    <style>
-        table { width: 100%; 
-        border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        #red { color: red;
-            font-size: 18px;
-        }
-        
-    </style>
+    .container {
+      width: 80%;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
 
+    header {
+      text-align: center;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-top: 10px;
+    }
+
+    h1 {
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+      color: #444;
+    }
+
+    section {
+      margin-bottom: 25px;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills li {
+      margin-bottom: 8px;
+    }
+
+    .contact a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .percent-bar {
+      background: #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 15px;
+      margin-top: 4px;
+    }
+
+    .percent-fill {
+      height: 100%;
+      background: #ff7178;
+      width: 0%;
+    }
+
+  </style>
 </head>
-
 <body>
-    <h1>สวัสดียินดีต้อนรับจ้า</h1> 
-   <center> <a href="http:www.google.com"target ="_blank"> <button>กดตรงนี้</button> </a>  </center>   <!-- ลิ้งไป url ไปที่ google โดยใช้ target = "bank" เพื่อเปิดurl ในหน้าถัดไป-->
-   <br><br><br>
-   <center> <img src="logo/t.png" alt="Logo" width="300">  </center>
-    
-    <br><br><br>
-    <p id="red">ทดสอบเปลี่ยน สี css</p>
+  <div class="container">
+    <header>
+      <img src="Puth.JPEG" alt="รูปโปรไฟล์">
+      <h1>นายฉายา ตะก้อง</h1>
+      <p>ตำแหน่งที่สมัคร: IT support</p>
+    </header>
 
-    <div>
-        <table>
-          <tr>
-            <th>ลำดับ</th>  
-            <th>ชื่อ</th>  
-            <th>อายุ</th>  
-            <th>อาชีพ</th>  
-          </tr>   
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        นาย ฉายา ตะก้อง เชื่อเล่น พุฒิ<br>
+        อายุ 22 ส่วนสูง 180 น้ำหนัก 64  <br>
+        งานอดิเรก อ่านหนังสือ <br>
+         ปรัชญาในการใช้ชีวิต : Live as if you were to did tomorrow. Learn as if you were to live forever
+      </p>
+    </section>
 
-          <tr>
-            <td>1</td>
-            <td>เนย</td>
-            <td>22</td>
-            <td>คนใช้</td>
-          </tr>
+    <section class="education">
+      <h2>Education</h2>
+      <ul>
+        <li>วิทยาลัยอาชีวศึกษาขอนแก่น - เทคโนโลยีสารสนเทศ ปริญญาตรี (2565 - 2566)</li>
+        <li>วิทยาลัยอาชีวศึกษาขอนแก่น - เทคโนโลยีสารสนเทศ อนุปริญญา (2563 - 2565)</li>
+      </ul>
+    </section>
 
-          <tr>
-            <td>2</td>
-            <td>พุช</td>
-            <td>22</td>
-            <td>สุดหล่อ</td>
-          </tr>
-        </table>
-    </div>    
+    <section class="experience">
+      <h2>Work Experience</h2>
+      <p><strong>บริษัท เดลต้าซอฟ (ประเทษไทย) จำกัด</strong> - IT support (สค. 2567 - มค. 2568)</p>
+      <ul>
+        <li> Support ทุกการใช้งาน Softwere ของบริษัท ให้กับลูกค้า</li>
+        <li>ทำงานร่วมกับ Progamer เช่นนำข้อผิดพลาดระบบที่ได้นับมาจากลูกค้า มาปรับปรุงระบบ และ คอยเทส softwere ก่อน บิ้วขึ้น เซิฟเวอร์</li>
+      </ul>
+      <p><strong>ฝึกงานที่ หจก.ขอนแก่นไทยแลนด์</strong> - (16.พฤษภาคม. 2565 - 31.กุมภาพันธุ์. 2566)</p>
+      <ul>
+        <li>ติดตั้งกล้องวงจรปิด ให้กับบริษัทต่างๆที่จ้างวาน</li>
+        <li>เก็บข้อมูล Report การเครื่องพิมพ์ในสถานที่ต่างๆที่มีสัญญาซื้อขาย เช่น รพ.รพศรีนครินทร์ รพ.หนองสองห้อง</li>
+      </ul>
+    </section>
 
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML / CSS
+          <div class="percent-bar"><div class="percent-fill" style="width: 75%;"></div></div>
+        </li>
+        <li>JavaScript
+          <div class="percent-bar"><div class="percent-fill" style="width: 50%;"></div></div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Information</h2>
+      <p>Email: chayatakong01@gmail.com</p>
+      <p>เบอร์โทร: 092-470-2203</p>
+      <p>
+        GitHub: <a href="https://github.com/username" target="_blank">github.com/username</a>
+      </p>
+    </section>
+  </div>
 </body>
 </html>
